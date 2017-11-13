@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyDestroyed : MonoBehaviour {
+public class EnemyScript : MonoBehaviour {
 
     [SerializeField]
     int enemyHealth;
@@ -10,20 +10,19 @@ public class EnemyDestroyed : MonoBehaviour {
     [SerializeField]
     int enemyValue;
 
-	// Update is called once per frame
-	void Update ()
+    // Update is called once per frame
+    void Update()
     {
-		if(enemyHealth <= 0)
+        if (enemyHealth <= 0)
         {
             PlayerGold.playerGold += enemyValue;
             Destroy(gameObject);
         }
-	}
+    }
 
     public void TakeDamage(int damage)
     {
         enemyHealth -= damage;
         Debug.Log(enemyHealth);
     }
-
 }

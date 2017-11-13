@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RangeCheck : MonoBehaviour {
-    
-    public GameObject Tower;
-    public GameObject Enemie;
+
+    public Transform target;
     public float distanceBetweenThem;
     // Use this for initialization
     void Start () {
@@ -15,9 +14,8 @@ public class RangeCheck : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         
-        distanceBetweenThem = Vector3.Distance(Tower.transform.position, Enemie.transform.position);
-
-        Debug.Log("Distance between obj1 and obj2 is " + distanceBetweenThem);
+        if(target != null)
+            distanceBetweenThem = Vector3.Distance(target.position, transform.position);
 
     }
 }

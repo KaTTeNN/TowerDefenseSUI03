@@ -9,10 +9,17 @@ EditorSettings:
   m_DefaultBehaviorMode: 0
   m_SpritePackerMode: 0
   m_SpritePackerPaddingPower: 1
+<<<<<<< HEAD
   m_EtcTextureCompressorBehavior: 1
   m_EtcTextureFastCompressor: 1
   m_EtcTextureNormalCompressor: 2
   m_EtcTextureBestCompressor: 4
+=======
+  m_EtcTextureCompressorBehavior: 0
+  m_EtcTextureFastCompressor: 0
+  m_EtcTextureNormalCompressor: 2
+  m_EtcTextureBestCompressor: 5
+>>>>>>> d59d6d34e88b6e7b7f4f846a5b7321d3b9ef4c80
   m_ProjectGenerationIncludedExtensions: txt;xml;fnt;cd
   m_ProjectGenerationRootNamespace: 
   m_UserGeneratedProjectSuffix: 

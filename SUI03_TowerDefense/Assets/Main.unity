@@ -465,8 +465,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1833613475}
-        m_MethodName: EnemySpawning
+      - m_Target: {fileID: 1833613473}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -591,6 +591,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1833613474}
   - component: {fileID: 1833613475}
+  - component: {fileID: 1833613476}
   m_Layer: 0
   m_Name: EnemySpawner
   m_TagString: Untagged
@@ -617,13 +618,47 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1833613473}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 14951bc18e31ed04aaf12b7be4ed94e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 1853264486022504, guid: 5c1d371953a7f0f4d8b93103fdc77fac,
+  enemyPrefab: {fileID: 1993669885108560, guid: 658fb046d2b329c4192a507c8dc6b279,
     type: 2}
+--- !u!114 &1833613476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1833613473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68b4cc7de61383f44ad7e69734f9bb71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waves:
+  - enemy: {fileID: 4583207288595378, guid: 658fb046d2b329c4192a507c8dc6b279, type: 2}
+    name: Round1
+    count: 2
+    rate: 1
+  - enemy: {fileID: 4583207288595378, guid: 658fb046d2b329c4192a507c8dc6b279, type: 2}
+    name: Round2
+    count: 4
+    rate: 2
+  - enemy: {fileID: 4583207288595378, guid: 658fb046d2b329c4192a507c8dc6b279, type: 2}
+    name: Round3
+    count: 6
+    rate: 1
+  - enemy: {fileID: 4583207288595378, guid: 658fb046d2b329c4192a507c8dc6b279, type: 2}
+    name: Round4
+    count: 8
+    rate: 1
+  - enemy: {fileID: 4583207288595378, guid: 658fb046d2b329c4192a507c8dc6b279, type: 2}
+    name: Round5
+    count: 15
+    rate: 2
+  timeBetweenWaves: 5
+  waveCountdown: 0
 --- !u!1 &1949333317
 GameObject:
   m_ObjectHideFlags: 0

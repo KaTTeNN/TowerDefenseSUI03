@@ -8,11 +8,9 @@ public class PlayerHealth : MonoBehaviour {
 
     void OnCollisionEnter(Collision col)
     {
-<<<<<<< HEAD
+
         Debug.Log("This totally worked");
-=======
-        Debug.Log("I'm here");
->>>>>>> 248ce939129c8e92f52f5abddf8098c83de1d077
+
         Destroy(col.gameObject);
         playerHealth--;
 

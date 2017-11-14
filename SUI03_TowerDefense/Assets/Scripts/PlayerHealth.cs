@@ -8,6 +8,15 @@ public class PlayerHealth : MonoBehaviour {
 
     void OnCollisionEnter(Collision col)
     {
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+        Debug.Log("This totally worked");
+
+=======
+>>>>>>> parent of 8d07418... Semi-working waves
+=======
+>>>>>>> parent of 8d07418... Semi-working waves
         Destroy(col.gameObject);
         playerHealth--;
 

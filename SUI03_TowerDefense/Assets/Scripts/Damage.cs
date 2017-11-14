@@ -11,6 +11,7 @@ public class Damage : MonoBehaviour
 {
     Turret temp;
     int dam;
+
     // Detta borde funka så länge man lägger till detta i i de olika sorter bullets och de kolliderar med motståndarna.
     void Start()
     {
@@ -23,8 +24,8 @@ public class Damage : MonoBehaviour
         if (col.gameObject.tag == "Enemies")
         {
             dam = temp.GetDamage(); //Ta bort när kod för att kulan skapas är klar
-            Debug.Log("I got hit");
-            EnemyDestroyed sak = col.gameObject.GetComponent<EnemyDestroyed>();;
+            Destroy(gameObject);
+            EnemyScript sak = col.gameObject.GetComponent<EnemyScript>();;
             sak.TakeDamage(dam);
         }
     }

@@ -10,7 +10,7 @@ public class SpawnBullet : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        timer = 1f;
+        timer = 1f; // Get firerate
     }
 
     void Update()
@@ -19,8 +19,11 @@ public class SpawnBullet : MonoBehaviour {
         if (timer <= 0f)
         {
             timer = 1f;
-            Instantiate(bullet, bulletPosition.transform);
-            BulletTravel.target = ; // Closest target.
+            if (TowerTrace.nearestEnemy != null)
+            {
+                Instantiate(bullet, bulletPosition.transform);
+                BulletScript.target = TowerTrace.nearestEnemy.transform;
+            }
         }
 
     }

@@ -8,7 +8,7 @@ public class HeavtTurretStats : Turret
     {
         range = 10;
         damage = 10;
-        fireRate = 5;
+        fireRate = 5f;
 
         costToUpgradeDamage = 100;
         costToUpgradeFireRate = 100;

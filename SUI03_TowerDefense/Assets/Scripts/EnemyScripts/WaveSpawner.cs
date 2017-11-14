@@ -35,7 +35,7 @@ public class WaveSpawner : MonoBehaviour {
 
 	void Update () 
 	{
-     
+
         if (state == GameState.Waiting)
         {
             if (!EnemyIsAlive())
@@ -68,8 +68,7 @@ public class WaveSpawner : MonoBehaviour {
             searchCountdown = 1f;
             if (GameObject.FindGameObjectWithTag("Enemy") == null)
             {
-                WaveCompleted();
-                //return false;
+                return false;
             }
         }
         return true;
@@ -81,7 +80,7 @@ public class WaveSpawner : MonoBehaviour {
 		for (int i = 0; i < _wave.count; i++) 
 		{
             EnemySpawning(_wave.enemy);
-			yield return new WaitForSeconds (_wave.rate);
+			yield return new WaitForSeconds (1f/_wave.rate);
 		}
 		state = GameState.Waiting;
 		yield break;

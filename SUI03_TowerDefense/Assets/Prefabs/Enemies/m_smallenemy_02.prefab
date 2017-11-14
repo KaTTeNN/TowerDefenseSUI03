@@ -21,13 +21,11 @@ GameObject:
   - component: {fileID: 4583207288595378}
   - component: {fileID: 33158572260636370}
   - component: {fileID: 23976395122456874}
-  - component: {fileID: 114369540589590112}
   - component: {fileID: 95156271277065626}
   - component: {fileID: 114998928601877564}
-  - component: {fileID: 65430192136686402}
   m_Layer: 0
   m_Name: m_smallenemy_02
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86,18 +84,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1993669885108560}
   m_Mesh: {fileID: 4300000, guid: 3a85c522b10a0c146ae3ba48efe62f5c, type: 3}
---- !u!65 &65430192136686402
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1993669885108560}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.5441778, y: 1.7084242, z: 4.9631953}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &95156271277065626
 Animator:
   serializedVersion: 3
@@ -115,19 +101,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114369540589590112
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1993669885108560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f8d0f7d6030e3a4295d3f419df243f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyHealth: 100
-  enemyValue: 10
 --- !u!114 &114998928601877564
 MonoBehaviour:
   m_ObjectHideFlags: 1

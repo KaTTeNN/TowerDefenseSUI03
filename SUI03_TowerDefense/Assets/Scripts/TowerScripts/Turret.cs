@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Turret : MonoBehaviour, IGetDamage
 {
-    public int range, fireRate, damage;
+    public int range, damage;
+    public float fireRate;
     public int costToUpgradeRange, costToUpgradeFireRate, costToUpgradeDamage;
 
     public void AddDamage(int damageAdd)

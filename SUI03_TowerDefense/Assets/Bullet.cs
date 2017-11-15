@@ -24,9 +24,9 @@ public class Bullet : MonoBehaviour {
         }
         else
         {
-            transform.Translate(dir.normalized * distThisFrame, Space.World);
-            Quaternion targetRotation = Quaternion.LookRotation(dir);
-                this.transform.rotation = Quaternion.Lerp(this.transform.rotation, targetRotation, Time.deltaTime * 5);
+                Quaternion targetRotation = Quaternion.LookRotation(dir);
+       transform.Translate(dir.normalized * distThisFrame, Space.World);
+                 this.transform.rotation = Quaternion.Lerp(this.transform.rotation, targetRotation, Time.deltaTime * 5);
         }
 		
 

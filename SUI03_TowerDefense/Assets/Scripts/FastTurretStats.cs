@@ -10,7 +10,7 @@ public class FastTurretStats : Turret
     {
         range = 10;
         damage = 5;
-        fireRate = 10;
+        fireRate = 10f;
         costToUpgradeDamage = 100;
         costToUpgradeFireRate = 100;
         costToUpgradeRange = 100;

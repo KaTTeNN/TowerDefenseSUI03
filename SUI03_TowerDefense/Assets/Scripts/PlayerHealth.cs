@@ -8,12 +8,15 @@ public class PlayerHealth : MonoBehaviour {
 
     void OnCollisionEnter(Collision col)
     {
+        Debug.Log("This totally worked");
+
         Destroy(col.gameObject);
         playerHealth--;
 
         if(playerHealth == 0)
         {
-            Application.Quit();
+            // Application.Quit();
+            Debug.Log("Player health is zero");
         }
     }
 }

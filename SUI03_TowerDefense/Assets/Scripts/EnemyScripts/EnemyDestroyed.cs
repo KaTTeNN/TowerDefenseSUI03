@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyDestroyed : MonoBehaviour {
 
     [SerializeField]
-    int enemyHealth;
+    public float enemyHealth;
 
     [SerializeField]
     int enemyValue;
@@ -16,14 +16,19 @@ public class EnemyDestroyed : MonoBehaviour {
 		if(enemyHealth <= 0)
         {
             PlayerGold.playerGold += enemyValue;
-            Destroy(gameObject);
+            Die();
         }
 	}
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         enemyHealth -= damage;
         Debug.Log(enemyHealth);
+    }
+
+    public void Die()
+    {
+        Destroy(gameObject);
     }
 
 }

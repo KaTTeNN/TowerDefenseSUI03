@@ -88,7 +88,11 @@ public class WaveSpawner : MonoBehaviour {
 
 	void EnemySpawning(Transform _enemy)
 	{       
+<<<<<<< HEAD
         transform.position = new Vector3(-3, -2, 1);
+=======
+        transform.position = new Vector3(1, 12, -22);
+>>>>>>> 9960bdac09acc89fc094d2d5f5a76ef515cbf6f5
         Instantiate(_enemy, transform.position, transform.rotation);
     }
 

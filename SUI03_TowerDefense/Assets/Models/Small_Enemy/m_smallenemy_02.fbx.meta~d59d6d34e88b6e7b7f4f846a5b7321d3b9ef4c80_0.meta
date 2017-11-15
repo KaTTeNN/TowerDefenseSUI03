@@ -1,16 +1,6 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-guid: f8556f28259dfa84c822f5afee00bcef
-timeCreated: 1510650712
-=======
-guid: 252949ac661e90641b8460a1b12191a6
-timeCreated: 1510663741
->>>>>>> b1d1d0365fb474afb411a48c7d52769da916dc2f
-=======
-guid: 81cb442c2d320b549913cd996a2fc9f3
-timeCreated: 1510652189
->>>>>>> 248ce939129c8e92f52f5abddf8098c83de1d077
+guid: 3e9e9149abd8094438d71bd69d46b95c
+timeCreated: 1510594165
 licenseType: Free
 DefaultImporter:
   externalObjects: {}
